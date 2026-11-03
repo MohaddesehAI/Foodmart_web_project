@@ -1,0 +1,197 @@
+# FoodMart | Sample E-Commerce Website
+
+## About the Project
+
+**FoodMart** is a sample e-commerce website developed as a learning and portfolio project using the Django web framework.
+
+The main goal of this project is to practice web development concepts and learn how to transform a ready-made e-commerce HTML template into a dynamic website using Django.
+
+In this project, selected parts of the FoodMart template have been customized and connected to the Django backend. Features such as product listing, shopping cart management, and dynamic data rendering have been implemented.
+
+> **Note:** This project is an educational portfolio project and is still under development. It is not a complete production-ready e-commerce website. Features such as online payment and final order processing have not been implemented yet.
+
+---
+
+## Implemented Features
+
+### Product Listing
+
+- Displaying products stored in the database
+- Retrieving product information through Django models
+- Displaying product names, prices, descriptions, and images
+- Showing products on the homepage
+- Displaying available and active products
+
+### Shopping Cart
+
+- Adding products to the shopping cart
+- Storing cart data using Django sessions
+- Increasing and decreasing product quantities
+- Removing products from the cart
+- Calculating each product's subtotal based on its quantity
+- Calculating the total cart price
+- Displaying cart items and their information on the cart page
+
+### Template Customization
+
+- Using the FoodMart HTML template
+- Customizing selected sections of the homepage
+- Improving the display of product prices and stock quantities
+- Removing duplicate quantity controls from product cards
+- Customizing the Header and Footer sections
+- Connecting shopping cart links to Django pages
+
+---
+
+## Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Python | Backend programming language |
+| Django | Web development framework |
+| HTML | Structure of web pages |
+| CSS | Styling and customization |
+| Bootstrap | Responsive layout and UI components |
+| JavaScript | Client-side interactions provided by the template |
+| SQLite | Database used during development |
+
+---
+
+## Project Structure
+
+The main project structure is shown below:
+
+```text
+FoodMart/
+│
+├── cart/
+│   ├── views.py
+│   ├── urls.py
+│   └── context_processors.py
+│
+├── products/
+│   ├── models.py
+│   ├── views.py
+│   └── urls.py
+│
+├── templates/
+│   ├── products/
+│   │   └── home.html
+│   │
+│   └── cart/
+│       └── cart_detail.html
+│
+├── static/
+│   └── foodmart/
+│       ├── css/
+│       ├── js/
+│       └── images/
+│
+├── manage.py
+├── db.sqlite3
+└── README.md
+```
+
+This structure represents the main parts of the project and may change as development continues.
+
+---
+
+## Installation and Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone <https://github.com/MohaddesehAI/Foodmart_web.git>
+```
+
+Navigate to the project directory:
+
+```bash
+cd FoodMart
+```
+
+### 2. Create a Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+Activate the virtual environment on Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+
+If a `requirements.txt` file is available:
+
+```bash
+pip install -r requirements.txt
+```
+
+Otherwise, install Django:
+
+```bash
+pip install django
+```
+
+### 4. Apply Database Migrations
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+### 5. Create a Superuser
+
+```bash
+python manage.py createsuperuser
+```
+
+### 6. Run the Development Server
+
+```bash
+python manage.py runserver
+```
+
+Open the website in your browser:
+
+```text
+http://127.0.0.1:8000/
+```
+
+The Django admin panel is available at:
+
+```text
+http://127.0.0.1:8000/admin/
+```
+
+---
+
+##  Planned Features
+
+The project is still under development. The following features may be added in future updates:
+
+- User registration and authentication
+- Individual product detail pages
+- Final order processing
+- Online payment gateway integration
+- Order management system
+- Functional newsletter subscription form
+- Improved user experience and page design
+- Product search and filtering
+
+---
+
+## Project Goals
+
+The main purpose of this project is to gain practical experience in Django web development and understand how models, views, templates, and sessions work together.
+
+FoodMart is being developed as a portfolio project to improve my web development skills and gain hands-on experience in building dynamic websites.
+
+---
+
+**Project Status:** In Progress  
+**Project Type:** Educational Portfolio Project  
+**Backend Framework:** Django  
